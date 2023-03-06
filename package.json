@@ -1,0 +1,33 @@
+{
+  "name": "example-json-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/eslint-parser": "^7.17.0",
+    "body-parser": "^1.20.0",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.29.0",
+    "winston": "^3.8.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.32",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node ./src/server",
+    "dev": "nodemon --experimental-specifier-resolution=node ./src/server",
+    "lint": "eslint ."
+  },
+  "type": "module"
+}
